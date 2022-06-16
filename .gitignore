@@ -1,0 +1,27 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# testing
+coverage*/
+
+# misc
+.env.*.local
+
+# package mgmt
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+clickone-s.iml
+.run
+
+# auto dirs
+build/
+node_modules/
+riRequestImages/
+files/
+server/src/docs/
+
+clients/@plusone-robotics/yonder-client/~/.npm/
