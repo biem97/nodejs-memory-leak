@@ -1,4 +1,3 @@
-"use strict";
 import { v4 as uuid } from "uuid";
 
 const STORE = new Set();
@@ -8,7 +7,7 @@ const getObject = function (req) {
   return item;
 };
 
-const memoryLeakLiteral = (req, res) => {
+const literal = (req, res) => {
   const { uuid } = getObject(req);
   console.log(req.method, req.url, uuid);
   res.end(
@@ -16,4 +15,4 @@ const memoryLeakLiteral = (req, res) => {
   );
 };
 
-export default memoryLeakLiteral;
+export default literal;

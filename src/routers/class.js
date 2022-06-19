@@ -9,7 +9,7 @@ const Item = class {
   }
 };
 
-const memoryLeakClass = (req, res) => {
+const classRouter = (req, res) => {
   const { uuid } = new Item(req);
   console.log(req.method, req.url, uuid);
   res.end(
@@ -17,4 +17,4 @@ const memoryLeakClass = (req, res) => {
   );
 };
 
-export default memoryLeakClass;
+export default classRouter;
